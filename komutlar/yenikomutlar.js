@@ -35,7 +35,6 @@ exports.run = (client, message, params) => {
         .addField('Komut 8 Diğer:', '**Hatabildir**')
         .addBlankField()
         .addField('Daha Komut mu Eklensin?', 'Öneri Komutuyla Bize Komut Öner!')
-        .addField('Botta Hata mı Var?', 'Hatabildir Komutuyla Bize Bildirebilirsin.')
         console.log("Yeni Komutlar " + message.author.username + "Tarafından Kullanıldı")
         return message.channel.sendEmbed(yenikomutlar);
     }
