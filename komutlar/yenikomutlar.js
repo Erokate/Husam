@@ -31,7 +31,11 @@ exports.run = (client, message, params) => {
         .addField('Komut 7:', '**Hesapla Komutu.** Her Türlü Matematik İşlemini Çözer')
         .addField('Komut 7 Diğer:', 'YOK')
         .addBlankField()
+        .addField('Komut 8:', '**Hata.** Botta Bir Hata Varsa Bu Komutla Bot Sahibine Bildirin.')
+        .addField('Komut 8 Diğer:', '**Hatabildir**')
+        .addBlankField()
         .addField('Daha Komut mu Eklensin?', 'Öneri Komutuyla Bize Komut Öner!')
+        .addField('Botta Hata mı Var?', 'Hatabildir Komutuyla Bize Bildirebilirsin.')
         console.log("Yeni Komutlar " + message.author.username + "Tarafından Kullanıldı")
         return message.channel.sendEmbed(yenikomutlar);
     }
